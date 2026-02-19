@@ -92,7 +92,7 @@ export async function loader({context, request}: Route.LoaderArgs) {
   const {storefront, oxygen, pack, env, customerAccount, cart} = context;
   const isPreviewModeEnabled = pack.isPreviewModeEnabled() as boolean;
 
-  console.log(''''''''')
+ 
 
   /*
    * Redirect to the correct locale if the buyer's country is different from the
