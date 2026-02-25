@@ -62,5 +62,10 @@ export const meta: Route.MetaFunction = ({matches}) => {
 export default function Index() {
   const {page} = useLoaderData<typeof loader>();
 
-  return <RenderSections content={page} />;
+  return (
+    <React.fragment>
+      <RenderSections content={page} />
+      <Westside />
+    </React.fragment>
+    )
 }
